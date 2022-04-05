@@ -1,0 +1,25 @@
+<%- include('../partials/header'); %>
+
+    <main class="main container">
+        <div class="row">
+            <h2 class="col-12"><%= name %></h2>
+            <section class="section row">
+                <figure class="figure col-10">
+                    <img src="<%= data.photoUrl %>" alt="<%= data.name %>" class="img-fluid">
+                    <figcaption><%= data.course %></figcaption>
+                    <figcaption><%= data.cuisine %></figcaption>
+                    <figcaption><%= data.mainIngredient %></figcaption>
+                    <figcaption><%= data.description %></figcaption>
+                    <hr>
+                    <figcaption><%= data.directions %></figcaption>
+                    <hr>
+                    <figcaption><%= data.cookTime %></figcaption>
+                    <figcaption><%= data.servings %></figcaption>
+                    <figcaption><%= data.servings %></figcaption>
+                    <figcaption><%= data.url %></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+<%- include('../partials/footer'); %>
